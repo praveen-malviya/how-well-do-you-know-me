@@ -20,3 +20,29 @@ var checkAnswer = function(question, answer){
    console.log("your score is "+ score +".");
    console.log("*****************************************")
   }
+
+  //Question bank for the Function
+  var questionOne = {
+    question : "Where do i live? ", 
+    answer : "BHOPAL"
+  }
+  var questionTwo = {
+    question : "Which Is My Favourite Animation Movie? ", 
+    answer : "KUNG FU PANDA"
+  }
+  var questionThree = {
+    question : "Which Is My Favourite TV Series? ", 
+    answer : "HOW I MET YOUR MOTHER"
+  }
+   var questionFour = {
+    question : "Who is my Favourite SuperHero? ", 
+    answer : "IRON MAN"
+  }
+
+  var questionFive = {
+    question : "What is my Favourite Dish? ", 
+    answer : "ALOO PARATHA"
+  }
+
+
+  var questions = [questionOne, questionTwo, questionThree, questionFour, questionFive];
