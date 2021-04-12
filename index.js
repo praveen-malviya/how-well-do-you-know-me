@@ -69,7 +69,7 @@ var checkAnswer = function(question, answer){
       console.log(highScores[i].name + " : " + highScores[i].score)
     }
   console.log("*****************************************")
-    console.log("Thanks for playing. if you crossed any of the high Scores please send screenshot will update here");
+    console.log("Thanks for playing. if you crossed any of the high-Scores please send screenshot will update here");
   
   }else{
     console.log("No Problem see you soon! ");
