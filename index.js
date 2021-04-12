@@ -46,6 +46,18 @@ var checkAnswer = function(question, answer){
 
   var questions = [questionOne, questionTwo, questionThree, questionFour, questionFive];
 
+  //Adding HighScore Array
+  var highScores = [
+    {
+      name : "Shreya",
+      score : "5"
+    },
+    {
+      name : "Sumit",
+      score : "4"
+    }
+  ];
+
   //Creating function to Automatically play Questions from QuestionBank.
   if(readlineSync.keyInYN("Would you like to play a little game called HOW WELL DO YOU KNOW ME ? ")){
     for(i=0; i<questions.length; i++){
@@ -53,11 +65,11 @@ var checkAnswer = function(question, answer){
     }
     console.log("your Final score is ", score, ".");
     console.log("Highscores:-");
-    // for (i=0; i<highScores.length; i++){
-    //   console.log(highScores[i].name + " : " + highScores[i].score)
-    // }
+    for (i=0; i<highScores.length; i++){
+      console.log(highScores[i].name + " : " + highScores[i].score)
+    }
   console.log("*****************************************")
-    console.log("Thanks for playing. if you crossed any of the highScores please send screenshot will update here");
+    console.log("Thanks for playing. if you crossed any of the high Scores please send screenshot will update here");
   
   }else{
     console.log("No Problem see you soon! ");
