@@ -44,5 +44,24 @@ var checkAnswer = function(question, answer){
     answer : "ALOO PARATHA"
   }
 
+  var questions = [questionOne, questionTwo, questionThree, questionFour, questionFive];
+
+  //Creating function to Automatically play Questions from QuestionBank.
+  if(readlineSync.keyInYN("Would you like to play a little game called HOW WELL DO YOU KNOW ME ? ")){
+    for(i=0; i<questions.length; i++){
+      checkAnswer(questions[i].question , questions[i].answer);
+    }
+    console.log("your Final score is ", score, ".");
+    console.log("Highscores:-");
+    // for (i=0; i<highScores.length; i++){
+    //   console.log(highScores[i].name + " : " + highScores[i].score)
+    // }
+  console.log("*****************************************")
+    console.log("Thanks for playing. if you crossed any of the highScores please send screenshot will update here");
+  
+  }else{
+    console.log("No Problem see you soon! ");
+  }
+
 
   var questions = [questionOne, questionTwo, questionThree, questionFour, questionFive];
